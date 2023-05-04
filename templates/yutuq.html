@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'style/style.css' %}">
+    <link rel="stylesheet" href="{% static 'bootstrap-5.0.2-dist/css/bootstrap.css' %}">
+    <title>Yutuq</title>
+</head>
+<body>
+    <div class="container">
+        <br>
+        <br>
+        <h1>{{ yutuq.sarlavha }}</h1> <p>({{ yutuq.sana }})</p>
+        <br>
+        <div class="row">
+            <div class="col-12">
+                <img src="{{ yutuq.rasm.url }}" alt="">
+                <br>
+                <br>
+                <p>{{ yutuq.matn }}</p>
+            </div>
+        </div>
+        <div class="row footer">
+            <p>© 2023</p>
+        </div>
+    </div>
+</body>
+</html>
